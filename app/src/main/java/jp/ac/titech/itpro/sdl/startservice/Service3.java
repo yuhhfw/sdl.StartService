@@ -20,7 +20,7 @@ public class Service3 extends IntentService {
         Log.d(TAG, "onHandleIntent in " + Thread.currentThread());
         Log.d(TAG, "myarg = " + intent.getStringExtra(EXTRA_MYARG));
         try {
-            Thread.sleep(5000); // 5 sec
+            Thread.sleep(5); // 5 milisec
             intent = new Intent();
             intent.setAction(ACTION_ANSWER);
             intent.putExtra(EXTRA_ANSWER,"\n" +
