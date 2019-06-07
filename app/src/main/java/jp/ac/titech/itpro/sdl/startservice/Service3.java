@@ -23,7 +23,18 @@ public class Service3 extends IntentService {
             Thread.sleep(5000); // 5 sec
             intent = new Intent();
             intent.setAction(ACTION_ANSWER);
-            intent.putExtra(EXTRA_ANSWER,"Don't working!!\n Let's take a break!!");
+            intent.putExtra(EXTRA_ANSWER,"\n" +
+                    "　　　＿＿＿_\n" +
+                    "   　 ／　　　　＼\n" +
+                    " 　 ／　 　⌒　⌒ ＼\n" +
+                    "　／（ ●）（●） ＼\n" +
+                    " |､\"　ﾞ)（__人__）\"　.）\n" +
+                    "　＼　  　 ｡｀||||＝＝(⌒)ー、\n" +
+                    "／ 　 　 　 　 ||||　　　 ＼　　〉\n" +
+                    "/ 　　 ,　　|￣￣￣￣￣￣| . ￣\n" +
+                    "/　　 /　　 ヽ回回回回回/　　\n" +
+                    "|　⌒ ーnｎｎ.ヽ＿＿＿/　　　\n" +
+                    "_､(\"二└─┘￣￣￣￣￣￣");
             sendBroadcast(intent);
         } catch (InterruptedException e) {
             e.printStackTrace();
